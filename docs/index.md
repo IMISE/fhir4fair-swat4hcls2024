@@ -1,3 +1,6 @@
+> [!Call for participation]
+> The audience is asked to bring their own examples of FHIR implementations of clinical research artifacts such as research study metadata, study designs, descriptions of datasets, inclusion and exclusion criteria or study documents.
+
 # Backgroud
 [Health Level 7 Fast Healthcare Interoperability Resources (FHIR)](https://www.hl7.org/fhir/) is the predominant evolving IT standard for the representation of medical data in health care. Many international initiatives are developing data models conforming to the FHIR specification to represent and exchange medical data, both within academics and industry. While the focus of FHIR has traditionally been health care, widening its use to clinical and epidemiological research is still at an early stage of development.
 
@@ -13,5 +16,34 @@ The tutorial addresses a broad target group of professionals including clinical 
 - clinical research informaticians
 - medical informaticians
 - policy makers
-> [!Call for participation!]
-> The audience is asked to bring their own examples of FHIR implementations of clinical research artifacts such as research study metadata, study designs, descriptions of datasets, inclusion and exclusion criteria or study documents.
+
+# Required skills
+The tutorial cannot provide a introduction to the basic concepts, therefore the following knowledge is required:
+- Basic knowledge of FAIR principles
+- Basic knowledge of HL7 FHIR and FHIR profiling
+- Basic understanding of research study workflow(s) and types
+
+# Learning objectives and intended results
+- Getting familiar with the problem of representing research artifacts in FHIR
+- Getting familiar with current approaches
+- Modeling real-world examples
+
+# Schedule (in progress)
+## Session 1: 14:00-15:30
+
+| Introduction to the tutorial and the work of the EFMI WG on FAIR data | Celia | 10’’ |
+| FAIRnessWithFHIR: Introduction to the FHIR4FAIR Implementation Guide | Matthias | 20’’ |
+| Introduction to the NFDI4Health Implementation Guide | Sophie | 15’’ |
+| Introduction to the MII Implementation Guide | Alex | 15’’ |
+| Representing research studies and artifacts in FHIR | *(practical exercise)* | 30’’ |
+
+## Session 2: 16:00-17:30
+
+| Representing research studies and artifacts in FHIR | *(practical exercise)* | 30’’ |
+| Discussion: 
+- What FHIR artifacts are needed for a FAIR representation of a medical research study to support data reuse?
+- What could a guideline look like to best fulfill each FAIR data principle? | *(all)* | 40’ |
+| Tool demo: FHIR export for the FAIRDOM-SEEK RDM | Xiaoming | 10’’ |
+| Sum-up and future collaboration | Matthias | 10’’ |
+
+
