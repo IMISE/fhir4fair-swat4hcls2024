@@ -1,7 +1,7 @@
-> [!Call for participation]
-> The audience is asked to bring their own examples of FHIR implementations of clinical research artifacts such as research study metadata, study designs, descriptions of datasets, inclusion and exclusion criteria or study documents.
+> [!Caution]
+> Call for participation: The audience is asked to bring their own examples of FHIR implementations of clinical research artifacts such as research study metadata, study designs, descriptions of datasets, inclusion and exclusion criteria or study documents.
 
-# Backgroud
+# Background
 [Health Level 7 Fast Healthcare Interoperability Resources (FHIR)](https://www.hl7.org/fhir/) is the predominant evolving IT standard for the representation of medical data in health care. Many international initiatives are developing data models conforming to the FHIR specification to represent and exchange medical data, both within academics and industry. While the focus of FHIR has traditionally been health care, widening its use to clinical and epidemiological research is still at an early stage of development.
 
 The [FAIR data principles](https://doi.org/10.1038/sdata.2016.18) and [FHIR profiling](https://hl7.org/FHIR/profiling.html) share common objectives centered around improving data interoperability and usability in healthcare, thus increasing value of these data. As the FAIR principles are meant to be rather understood as guidance than as strict rules, we need to put in relation the FAIR principles' overarching goals with the specific technical specifications and standards of FHIR profiling to align both, FHIR and FAIR.
@@ -40,9 +40,7 @@ The tutorial cannot provide a introduction to the basic concepts, therefore the 
 ## Session 2: 16:00-17:30
 
 | Representing research studies and artifacts in FHIR | *(practical exercise)* | 30’’ |
-| Discussion: 
-- What FHIR artifacts are needed for a FAIR representation of a medical research study to support data reuse?
-- What could a guideline look like to best fulfill each FAIR data principle? | *(all)* | 40’ |
+| Discussion: What FHIR artifacts are needed for a FAIR representation of a medical research study to support data reuse? What could a guideline look like to best fulfill each FAIR data principle? | *(all)* | 40’ |
 | Tool demo: FHIR export for the FAIRDOM-SEEK RDM | Xiaoming | 10’’ |
 | Sum-up and future collaboration | Matthias | 10’’ |
 
