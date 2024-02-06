@@ -1,3 +1,7 @@
+<img src="https://efmi.org/wp-content/uploads/2019/11/EFMI_Logo_new_wg-587x235.png" alt="EFMI Working Groups Logo" width="300" align="right">
+<img src="https://www.nfdi4health.de/images/logo/nfdi4health.svg" alt="NFDI4Health Logo" width="300" align="right">
+<img src="https://www.medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png" alt="MII Logo" width="300" align="right">
+
 > [!Caution]
 > Call for participation: The audience is asked to bring their own examples of FHIR implementations of clinical research artifacts such as research study metadata, study designs, descriptions of datasets, inclusion and exclusion criteria or study documents.
 
