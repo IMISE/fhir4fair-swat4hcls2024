@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: Aligning the FAIR data principles and HL7 FHIR profiling
-description: Tutorial for SWAT4HCLS 2024 in Leiden.
+description: Tutorial for SWAT4HCLS 2024 conference in Leiden.
+markdown: GFM
