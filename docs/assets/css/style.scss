@@ -3,6 +3,17 @@
 
 @import "{{ site.theme }}";
 .red-box { 
+  margin: 5px;
   padding: 5px;
-  border: 2px dotted red;
+  border: 4px dotted red;
+  color: red;
+}
+.box-heading {
+  font-weight: bold;
+  text-shadow: 1px 1px;
+}
+.logo { 
+  margin: 5px;
+  padding: 5px;
+  border-style: none;
 }
