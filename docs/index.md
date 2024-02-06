@@ -1,6 +1,6 @@
-<img src="https://efmi.org/wp-content/uploads/2019/11/EFMI_Logo_new_wg-587x235.png" alt="EFMI Working Groups Logo" width="100">
-<img src="https://www.nfdi4health.de/images/logo/nfdi4health.svg" alt="NFDI4Health Logo" width="100">
-<img src="https://www.medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png" alt="MII Logo" width="100">
+<div class="logo"><img src="https://efmi.org/wp-content/uploads/2019/11/EFMI_Logo_new_wg-587x235.png" alt="EFMI Working Groups Logo" width="125"></div>
+<div class="logo"><img src="https://www.nfdi4health.de/images/logo/nfdi4health.svg" alt="NFDI4Health Logo" width="125"></div>
+<div class="logo"><img src="https://www.medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png" alt="MII Logo" width="125"></div>
 
 # Background
 <details>
@@ -12,6 +12,7 @@
 The [FAIR data principles](https://doi.org/10.1038/sdata.2016.18) and [FHIR profiling](https://hl7.org/FHIR/profiling.html) share common objectives centered around improving data interoperability and usability in healthcare, thus increasing value of these data. As the FAIR principles are meant to be rather understood as guidance than as strict rules, we need to put in relation the FAIR principles' overarching goals with the specific technical specifications and standards of FHIR profiling to align both, FHIR and FAIR.
 
 </details>
+
 
 In FHIR, an Implementation Guide is a formal, logical and narrative specification of constraints and extensions  to the FHIR data model to better represent a specific usage scenario. The tutorial aims at discussing and using the [FHIR for FAIR Implementation Guide](https://build.fhir.org/ig/HL7/fhir-for-fair/) (FHIR4FAIR IG) in selected use cases to show the applicability in practice, identify current gaps and limitations (also community-specifically), and possibly foster its development and use in further (inter-)national initiatives.
 
@@ -25,7 +26,7 @@ The tutorial addresses a broad target group of professionals including clinical 
 - policy makers
 
 <div class="red-box">
-  <p><span class="box-heading">Call for participation:</span> The audience is asked to bring their own examples of FHIR implementations of clinical research artifacts such as research study metadata, study designs, descriptions of datasets, inclusion and exclusion criteria or study documents.</p>
+  <span class="box-heading">Call for participation:</span> The audience is asked to bring their own examples of FHIR implementations of clinical research artifacts such as research study metadata, study designs, descriptions of datasets, inclusion and exclusion criteria or study documents.
 </div>
 
 # Required skills
