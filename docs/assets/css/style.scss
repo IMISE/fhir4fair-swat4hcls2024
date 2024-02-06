@@ -2,3 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+.red-box { 
+  padding: 5px;
+  border: 2px dotted red;
+}
