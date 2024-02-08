@@ -2,12 +2,14 @@
 
 The tutorial will be organized by
 
-- Matthias Löbe [^1],[^2],[^3], [^4]
-- Sophie Anne Ines Klopfenstein [^5], [^2]
+- Matthias Löbe [^1] [^2] [^3] [^4]
+- Sophie Anne Ines Klopfenstein [^5] [^2]
 - Xiaoming Hu [^6]
-- Celia Alvarez Romero [^7], [^4]
-- Alexander Zautke [^3], [^8]
-- Giorgio Gangioli[^9]
+- Celia Alvarez Romero [^7] [^4]
+- Alexander Zautke [^3] [^8]
+- Giorgio Gangioli [^9]
+
+Some organizers will participate remorely.
 
 [^1]: IMISE University of Leipzig, Leipzig, Germany
 [^2]: National Research Data Infrastructure for Personal Health Data (NFDI4Health), Cologne, Germany
