@@ -4,7 +4,7 @@ The tutorial will be organized by
 
 - Matthias Löbe [^1] [^2] [^3] [^4]
 - Sophie Anne Ines Klopfenstein [^5] [^2]
-- Xiaoming Hu [^6]
+- Xiaoming Hu [^6] [^2]
 - Celia Alvarez Romero [^7] [^4]
 - Alexander Zautke [^3] [^8]
 - Giorgio Gangioli [^9]
