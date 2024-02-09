@@ -40,7 +40,7 @@ The tutorial cannot provide a introduction to the basic concepts, therefore the 
 - Modeling real-world examples
 
 # Schedule (in progress)
-## Session 1: 14:00-15:30
+## Session 1: 2024-02-26 09:00-10:30
 
 | Introduction to the tutorial and the work of the EFMI WG on FAIR data | Celia | 10’’ |
 | FAIRnessWithFHIR: Introduction to the FHIR4FAIR Implementation Guide | Matthias | 20’’ |
@@ -48,7 +48,7 @@ The tutorial cannot provide a introduction to the basic concepts, therefore the 
 | Introduction to the MII Implementation Guide | Alex | 15’’ |
 | Representing research studies and artifacts in FHIR | *(practical exercise)* | 30’’ |
 
-## Session 2: 16:00-17:30
+## Session 2: 2024-02-26 11:00-12:30
 
 | Representing research studies and artifacts in FHIR | *(practical exercise)* | 30’’ |
 | Discussion: What FHIR artifacts are needed for a FAIR representation of a medical research study to support data reuse? What could a guideline look like to best fulfill each FAIR data principle? | *(all)* | 40’ |
