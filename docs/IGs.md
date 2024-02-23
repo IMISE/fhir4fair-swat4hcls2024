@@ -5,13 +5,15 @@
 # Implementation Guides
 ## HL7 FHIR - Fast Healthcare Interoperability Resources
 ### FHIR specification
-* R4
-* [FHIR R4B
-* [FHIR R5 (Standard for Trial Use)](https://hl7.org/fhir/R5/)
-* [FHIR R6 Ballot (1st Draft)](https://hl7.org/fhir/6.0.0-ballot1/)
+* [FHIR R4](http://hl7.org/fhir/R4) - 2019-10-30
+* [FHIR R4B](http://hl7.org/fhir/R4B) - 2022-05-28
+* **[FHIR R5 (Current)](https://hl7.org/fhir/R5/)** - 2023-03-26
+* [FHIR R6 Ballot (1st Draft)](https://hl7.org/fhir/6.0.0-ballot1/) - 2023-12-19
 * [FHIR last commit](https://build.fhir.org/)
 
 ### Relevant resources
+
+Todo
 
 ## FHIR4FAIR IG
 Implementation Guide developed by the HL7 WG SOA and the [FAIR4Health](https://www.fair4health.eu/) project.
