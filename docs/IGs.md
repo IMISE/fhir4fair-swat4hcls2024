@@ -6,9 +6,10 @@
 ## HL7 FHIR - Fast Healthcare Interoperability Resources
 ### FHIR specification
 * R4
-* R4b
-* R5
-* R6-snaphot
+* [FHIR R4B
+* [FHIR R5 (Standard for Trial Use)](https://hl7.org/fhir/R5/)
+* [FHIR R6 Ballot (1st Draft)](https://hl7.org/fhir/6.0.0-ballot1/)
+* [FHIR last commit](https://build.fhir.org/)
 
 ### Relevant resources
 
