@@ -8,7 +8,6 @@ To choose an interesting study for the exercise, you can choose from the followi
 * [EU Trials Tracker](https://eu.trialstracker.net/): Under EU rules, all trials on the European Union Clinical Trials Register (EUCTR) should post results within 12 months of completion to support clinical trial transparancy. Look for a [sponsor from your home town](https://eu.trialstracker.net/?search)!
 * [ClinicalTrials.gov](https://clinicaltrials.gov/): US-based, largest registry for international trials.
 
-## Clinical trial registries
+DRKS
 ## Study documents and study data
 ITN Trialshare
-Fevir
