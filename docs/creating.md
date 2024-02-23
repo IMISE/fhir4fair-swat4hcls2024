@@ -29,14 +29,20 @@ Even if a resource can be translated from FSH to JSON without errors, problems a
 
 Simplifier can also validate against a profile deposited in the Simplifier registry:
 
-* Simplifier Validator
+* Simplifier Validator with profile
 
 ## Advanced Tooling
 There is a whole ecosystem of useful tools that make working with FSH and FHIR easier. However, these will not be used in this tutorial.
 
 ### Visual Studio Code extensions
+Extensions extend the functionality of [VS Code](https://code.visualstudio.com/), a popular programming IDE.
 
+* [FSH Language Support for VS Code](https://marketplace.visualstudio.com/items?itemName=MITRE-Health.vscode-language-fsh) - syntax highlighting, autocomplete
+* [codfsh](https://github.com/gematik/codfsh) - wraps SUSHI (FHIR Shorthand) and the HAPI Validator, providing comprehensive warning and error messages. It allows you to "run" your .fsh shorthand files to both generate FHIR .json files and validate them simultaneously.
 ### FHIR Servers (public)
 ### FHIR Servers (local deployment)
 ### Postman
 Postman is a well-known 
+
+### ClinFHIR
+[ClinFHIR](http://clinfhir.com/) is a portal of different tools for playing with FHIR or demonstration purposes. It includes a Patient Viewer, Scenario Builder, Logical Modeller, CodeSystem builder, Extension Definition builder and a Query Tool.
