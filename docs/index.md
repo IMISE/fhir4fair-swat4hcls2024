@@ -49,7 +49,7 @@ The tutorial cannot provide a introduction to the basic concepts, therefore the 
 | Tool demo: FHIR export for the FAIRDOM-SEEK RDM | Xiaoming | 20’’ |
 | Representing research studies and artifacts in FHIR | *(practical exercise)* | 10’’ |
 
-## Session 2: 2024-02-26 11:00-12:30
+## Session 2: 2024-02-26 11:00-13:00
 
 | Representing research studies and artifacts in FHIR | *(practical exercise)* | 60’’ |
 | Discussion: What FHIR artifacts are needed for a FAIR representation of a medical research study to support data reuse? What could a guideline look like to best fulfill each FAIR data principle? | *(all)* | 50’ |
