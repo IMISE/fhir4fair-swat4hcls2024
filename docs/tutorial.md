@@ -21,7 +21,7 @@ If you do not want to start with an empty study, you can copy the JSON code from
 As a reference example and to show the expressiveness of different Implmentation Guides, we developed serializations in different formats for an overarching clinical trial: LIVERT(W)OHEAL (L2H).
 
 ### Normative references
-* clinicaltrials.gov
+* [LIVERT(W)OHEAL in clinicaltrials.gov](https://beta.clinicaltrials.gov/study/NCT03488953)
 
 ### Vanilla FHIR
 Plain FHIR using only the elements that are part of the FHIR specification.
