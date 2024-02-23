@@ -14,4 +14,6 @@ According to the Research Data Alliance FAIR Data Maturity Model Working Group, 
 
 ## Publications
 Some Publications might held in understanding the effort (not exclusive):
+* Klopfenstein SAI, Vorisek CN, Shutsko A, Lehne M, Sass J, Löbe M et al. [Fast Healthcare Interoperability Resources (FHIR) in a FAIR Metadata Registry for COVID-19 Research](https://pubmed.ncbi.nlm.nih.gov/34795084/). Studies in health technology and informatics 2021; 287:73–7. doi: 10.3233/SHTI210817.
+* Martínez-García A, Cangioli G, Chronaki C, Löbe M, Beyan O, Juehne A et al. [FAIRness for FHIR: Towards Making Health Datasets FAIR Using HL7 FHIR](https://pubmed.ncbi.nlm.nih.gov/35672963/). Studies in health technology and informatics 2022; 290:22–6. doi: 10.3233/SHTI220024.
 * van Damme P, Löbe M, Benis N, Keizer NF de, Cornet R. [Assessing the use of HL7 FHIR for implementing the FAIR guiding principles: a case study of the MIMIC-IV Emergency Department module](https://pubmed.ncbi.nlm.nih.gov/38283884/). JAMIA Open 2024; 7(1). doi: 10.1093/jamiaopen/ooae002.
