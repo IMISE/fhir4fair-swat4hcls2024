@@ -9,6 +9,8 @@ Here are some hints how to add metadata as FHIR elements to your research study.
 
 ### Starting from Scatch
 
+*TODO*
+
 ### Starting from examples
 If you do not want to start with an empty study, you can copy the JSON code from one of the following examples.
 
