@@ -46,3 +46,6 @@ Postman is a well-known
 
 ### ClinFHIR
 [ClinFHIR](http://clinfhir.com/) is a portal of different tools for playing with FHIR or demonstration purposes. It includes a Patient Viewer, Scenario Builder, Logical Modeller, CodeSystem builder, Extension Definition builder and a Query Tool.
+
+### FEvIR PlatMit freundlichen Grüßen
+The [FEvIR Platform](https://fevir.net/) includes many Builder Tools to create FHIR® Resources without requiring expertise in FHIR® or JSON, and Converter Tools to convert structured data to FHIR® Resources.
