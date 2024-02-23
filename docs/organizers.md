@@ -15,7 +15,7 @@ The tutorial will be organized by
 
 Some organizers will participate remorely.
 
-[^1]: IMISE University of Leipzig, Leipzig, Germany
+[^1]: [IMISE University of Leipzig](https://www.imise.uni-leipzig.de/en), Leipzig, Germany
 [^2]: National Research Data Infrastructure for Personal Health Data (NFDI4Health), Cologne, Germany
 [^3]: Medical Informatics Initiative (MII), Berlin, Germany
 [^4]: FAIR WG, European Federation for Medical Informatics (EFMI), Le Mont-sur-Lausanne, Switzerland
