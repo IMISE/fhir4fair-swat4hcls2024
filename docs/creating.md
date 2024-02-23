@@ -8,8 +8,10 @@ Creating research studies and related objects
 ## Creating FHIR instances with FSH
 For the practical work in the tutorial, we recommend working with **FHIR Short Hand (FSH)**, a DSL that can be translated into FHIR and, unlike JSON or XML, has the advantage that there is a clearly legible instruction in every line.
 
-* FSH Cheat Sheet
+* [FSH Cheat Sheet](https://build.fhir.org/ig/HL7/fhir-shorthand/FSHQuickReference.pdf) - providing a reference the most-used structures
+* Examples
 * [FSH Specification](https://build.fhir.org/ig/HL7/fhir-shorthand/) - good for cracks, harder for neophytes
+* [FSH Finder](https://fshschool.org/fsh-finder/) - list of projects using FSH, if you are looking for additional examples
 
 FSH is stored in text files in real projects and translated into FHIR using a compiler ([SUSHI](https://fshschool.org/docs/sushi/)). It is also possible to return FHIR to FSH ([GoFSH](https://fshschool.org/docs/gofsh/)). Due to the more complex configuration of SUSHI, we use a web tool that provides the most important functions in a small GUI. FSH Online contains a range of FSH templates in the *FSH Examples* menu item that you can use to get started.
 
@@ -30,7 +32,11 @@ Simplifier can also validate against a profile deposited in the Simplifier regis
 * Simplifier Validator
 
 ## Advanced Tooling
+There is a whole ecosystem of useful tools that make working with FSH and FHIR easier. However, these will not be used in this tutorial.
+
 ### Visual Studio Code extensions
+
 ### FHIR Servers (public)
 ### FHIR Servers (local deployment)
 ### Postman
+Postman is a well-known 
