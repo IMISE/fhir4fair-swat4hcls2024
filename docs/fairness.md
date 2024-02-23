@@ -1,3 +1,7 @@
+<span class="logo"><img src="https://efmi.org/wp-content/uploads/2019/11/EFMI_Logo_new_wg-587x235.png" alt="EFMI Working Groups Logo" width="125"></span>
+<span class="logo"><img src="https://www.nfdi4health.de/images/logo/nfdi4health.svg" alt="NFDI4Health Logo" width="125"></span>
+<span class="logo"><img src="https://www.medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png" alt="MII Logo" width="125"></span>
+
 # FAIRness with FHIR
 
 ## RDA Maturity Model
@@ -6,7 +10,7 @@ According to the Research Data Alliance FAIR Data Maturity Model Working Group, 
 * [FAIR_evaluation_levels_v0.01.xlsx](https://zenodo.org/records/3909563#.YGRNnq8za70:~:text=FAIR_evaluation_levels_v0.01.xlsx)
 
 ## Material
-* Philip van Damme - [FHIR for scientific data: implementing the FAIR principles](https://www.youtube.com/watch?v=5fxkBoJBi1w) | DevDays June 2022 (Youtube)
+* Philip van Damme: [FHIR for scientific data: implementing the FAIR principles](https://www.youtube.com/watch?v=5fxkBoJBi1w). DevDays June 2022. Youtube
 
 ## Publications
 Some Publications might held in understanding the effort (not exclusive):
