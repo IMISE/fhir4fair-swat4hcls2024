@@ -9,8 +9,8 @@ Here are some hints how to add metadata as FHIR elements to your research study.
 
 ### Todo
 
-## Reference Example LIVERT(W)OHEAL (L2H)
-As a reference example and to show the expressiveness of different Implmentation Guides, we developed serializations in different formats for an overarching clinical trial.
+## Reference Example L2H
+As a reference example and to show the expressiveness of different Implmentation Guides, we developed serializations in different formats for an overarching clinical trial: LIVERT(W)OHEAL (L2H).
 
 ### Normative references
 * clinicaltrials.gov
