@@ -7,7 +7,14 @@
 ## Basic options for adding metadata to research studies
 Here are some hints how to add metadata as FHIR elements to your research study.
 
-### Todo
+### Starting from Scatch
+
+### Starting from examples
+If you do not want to start with an empty study, you can copy the JSON code from one of the following examples.
+
+* [NFDI4Health Example Study](https://simplifier.net/NFDI4Health-Metadata-Schema/NFDI4Health_PR_MDS_Study/~json)
+* [MII Beispielstudie](https://simplifier.net/medizininformatik-initiative-modul-studien/fsh-generated-resources-researchstudy-mii-exa-studie-studie)
+* [List of examples for instances of FHIR R4 ResearchStudy on Simplifier](https://simplifier.net/search?fhir=r4&category=Example&resource=ResearchStudy&Term=) - varying quality
 
 ## Reference Example L2H
 As a reference example and to show the expressiveness of different Implmentation Guides, we developed serializations in different formats for an overarching clinical trial: LIVERT(W)OHEAL (L2H).
