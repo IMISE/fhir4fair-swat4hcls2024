@@ -11,10 +11,6 @@
 * [FHIR R6 Ballot (1st Draft)](https://hl7.org/fhir/6.0.0-ballot1/) - 2023-12-19
 * [FHIR last commit](https://build.fhir.org/)
 
-### Relevant resources
-
-Todo
-
 ## FHIR4FAIR IG
 Implementation Guide developed by the HL7 WG SOA and the [FAIR4Health](https://www.fair4health.eu/) project.
 * [Implementation Guide](https://build.fhir.org/ig/HL7/fhir-for-fair/index.html)
