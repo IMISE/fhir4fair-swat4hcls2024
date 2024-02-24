@@ -92,7 +92,13 @@ No problem while converting.
 ## Adding the start and end date/time of a study
 
 Adding dates
-No problem while validating. To make the last warning disappear
+No problem while validating.
+
+![](./assets/img/wt01-fsh-online.png | width=100)
+
+<img src="./assets/img/wt01-fsh-online.png" width="100"/>
+
+To make the last warning disappear
 
 
 
