@@ -17,9 +17,12 @@ On the left-hand side you can see the editor for FSH, on the right-hand side the
 FSH Online provides useful templates.
 
 * Go to "FSH Examples" and then to "Instances >> Instance Example".
-* Click on "Clipboard", "Close" and paste the content in the left panel. Click "Convert to JSON".
 
 <a href="./assets/img/wt02-fsh-example.png"><img src="./assets/img/wt02-fsh-example.png" width="100"/></a>
+
+* Click on "Clipboard", "Close" and paste the content in the left panel. Click "Convert to JSON".
+
+<a href="./assets/img/wt03-fsh-patient.png"><img src="./assets/img/wt03-fsh-patient.png" width="100"/></a>
 
 That's how it works basically. A new tab has appeared on the right-hand side; several FHIR resources can be created from one FSH file.
 
@@ -29,7 +32,11 @@ You can now validate the example to be sure.
 * Open [https://inferno.healthit.gov/validator/](https://inferno.healthit.gov/validator/).
 * Paste the content and click "Validate".
 
+<a href="./assets/img/wt04-inferno.png"><img src="./assets/img/wt04-inferno.png" width="100"/></a>
+
 There should be no errors, only some warnings.
+
+<a href="./assets/img/wt05-inferno-valid.png"><img src="./assets/img/wt05-inferno-valid.png" width="100"/></a>
 
 ## Creating an empty study
 
@@ -43,6 +50,8 @@ Description: "Example of a research study"
 Usage: #example
 ```
 
+<a href="./assets/img/wt06-researchstudy-template.png"><img src="./assets/img/wt06-researchstudy-template.png" width="100"/></a>
+
 It generates some JSON code, but there is obviously a mistake.
 
 > error Element ResearchStudy.status has minimum cardinality 1 but occurs 0 time(s).
@@ -54,13 +63,17 @@ The ResearchStudy has a mandatory field called status in FHIR and this is missin
 
 If we look at the specification of [ResearchStudy](https://hl7.org/fhir/R4/researchstudy.html#resource) in FHIR R4, we see that the cardinality of status is 1..1.
 
+<a href="./assets/img/wt07-fhir-r4-researchstudy.png"><img src="./assets/img/wt07-fhir-r4-researchstudy.png" width="100"/></a>
+
 We need to specify a value for status. The data type is code, i.e. it is a value from a predefined set. FHIR distinguishes between different degrees of strictness as to whether the value must actually be taken from the given values. This is the case with (Required). You can find out what the individual codes mean by clicking on ResearchStudyStatus.
 
 ```
 * status = #in-review
 ```
 
-All other elements are optional in the generic resource. Now no more errors are returned and the validation would also work. F
+All other elements are optional in the generic resource. Now no more errors are returned and the validation would also work.
+
+<a href="./assets/img/wt08-rs-status.png"><img src="./assets/img/wt08-rs-status.png" width="100"/></a>
 
 ## Adding the study title
 
@@ -84,8 +97,11 @@ The description of a study is of type markdown and is assigned in the same way, 
 * note = "Study design is still unclear."
 ```
 
-Although it was about text again, it didn't work this time. The data type of note is [Annotation](https://hl7.org/fhir/R4/datatypes.html#Annotation) and this is not a primitive data type.
-An annotation can have an author and a creation date. We now want to dispense with this and only use the text element.
+Although it was about text again, it didn't work this time.
+
+<a href="./assets/img/wt09-annotation.png"><img src="./assets/img/wt09-annotation.png" width="100"/></a>
+
+The data type of note is [Annotation](https://hl7.org/fhir/R4/datatypes.html#Annotation) and this is not a primitive data type. An annotation can have an author and a creation date. We now want to dispense with this and only use the text element.
 
 ```
 * note.text = "Study design is still unclear."
