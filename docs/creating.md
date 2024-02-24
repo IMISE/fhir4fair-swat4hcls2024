@@ -3,6 +3,7 @@
 <span class="logo"><img src="https://www.medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png" alt="MII Logo" width="125"></span>
 
 # Working with FHIR Shorthand
+FSH is usually used for "profiling", which basically means restricting cardinalities, limiting codes to a certain set and adding more use case semantics to the very generic FHIR resources. It can also be used to creates instance that conform to a given specification and that is what we want to do in our limited setting.
 
 ## Creating FHIR instances with FSH
 For the practical work in the tutorial, we recommend working with **FHIR Short Hand (FSH)**, a DSL that can be translated into FHIR and, unlike JSON or XML, has the advantage that there is a clearly legible instruction in every line. Some help will be found there.
