@@ -26,3 +26,19 @@ You can now validate the example to be sure.
 There should be no errors, only some warnings.
 
 ## Creating an empty study
+
+* Open https://fshschool.org/FSHOnline/#/ and delete everything possibly left in the FSH tab.
+* Enter the code snippet below and substitude the name of the instance with your pref Press "Convert to JSON".
+
+```
+Instance: firetrial
+InstanceOf: ResearchStudy
+Description: "Example of a research study"
+Usage: #example
+```
+
+It generates some JSON code, but there is obviously a mistake.
+
+> error Element ResearchStudy.status has minimum cardinality 1 but occurs 0 time(s).
+> Line: 1 - 4
+
