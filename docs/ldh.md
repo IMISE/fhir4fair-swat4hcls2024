@@ -12,4 +12,7 @@ A [sandbox](https://sandbox1.fairdomhub.org/) is temporarely provided with a dra
 
 **URL: [https://sandbox1.fairdomhub.org/](https://sandbox1.fairdomhub.org/)**
 
+Username: guest1
+Password: guestprofile1
+
 ![SEEK Logo](https://seek4science.org/assets/images/fairdom-seek-logo-alt.svg)
