@@ -10,12 +10,16 @@ This walk-through is intended for interested parties who have not yet worked int
 
 * Open [https://fshschool.org/FSHOnline/#/](https://fshschool.org/FSHOnline/#/).
 
+<a href="./assets/img/wt01-fsh-online.png"><img src="./assets/img/wt01-fsh-online.png" width="100"/></a>
+
 On the left-hand side you can see the editor for FSH, on the right-hand side the editor for FHIR-JSON. You can edit in both and then transfer the changes to the other side using "Convert to".
 
 FSH Online provides useful templates.
 
 * Go to "FSH Examples" and then to "Instances >> Instance Example".
 * Click on "Clipboard", "Close" and paste the content in the left panel. Click "Convert to JSON".
+
+<a href="./assets/img/wt02-fsh-example.png"><img src="./assets/img/wt02-fsh-example.png" width="100"/></a>
 
 That's how it works basically. A new tab has appeared on the right-hand side; several FHIR resources can be created from one FSH file.
 
@@ -94,9 +98,7 @@ No problem while converting.
 Adding dates
 No problem while validating.
 
-![](./assets/img/wt01-fsh-online.png | width=100)
 
-<img src="./assets/img/wt01-fsh-online.png" width="100"/>
 
 To make the last warning disappear
 
