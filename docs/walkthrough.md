@@ -186,6 +186,10 @@ Alias: $sct = http://snomed.info/sct
 
 ## Adding sponsor and PI (Reference to another named resource)
 
+Finally, we want to add references to other FHIR resources. FHIR ResearchStudy sponsor refers to a FHIR Organization and principalInvestigator refers to a Practitioner or a PractitionerRole. Both are independent entities like ResearchStudy itself. Both can be references by other instance as well. However, they should only be created once.
+
+In the case of principalInvestigator, you can see another peculiarity of FHIR: for some elements, several resource types are possible as values; the data modeler selects the most suitable one.
+
 Referencing another FHIR resource instance is easy.
 
 ```
@@ -211,7 +215,14 @@ FSH Online now generates three individual files, see on the far right.
 
 <a href="./assets/img/wt14-fsh-references.png"><img src="./assets/img/wt14-fsh-references.png" width="100"/></a>
 
-## FHIR4FAIR
+## Using the FHIR4FAIR Implementation Guide ResearchStudy-uv-f4f (Profile)
+```
+* name.text = "Prof. Dr. T. Ester"
+```
+
+FSH Online now generates three individual files, see on the far right.
+
+<a href="./assets/img/wt1.png"><img src="./assets/img/wt14-fsh-references.png" width="100"/></a>
 
 # Exercises
 
