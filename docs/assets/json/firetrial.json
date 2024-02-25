@@ -1,0 +1,87 @@
+{
+  "resourceType": "ResearchStudy",
+  "id": "firetrial",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/fhir-for-fair/StructureDefinition/ResearchStudy-uv-f4f"
+    ]
+  },
+  "status": "in-review",
+  "title": "FAIRness in FHIR",
+  "description": "A study assessing the **FAIRness** of FHIR artifacts.",
+  "note": [
+    {
+      "text": "Study design is still unclear."
+    }
+  ],
+  "period": {
+    "start": "2024-02-26T09:00:00+01:00",
+    "end": "2024-12"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://clinicaltrials.gov",
+      "value": "NCT05487991"
+    }
+  ],
+  "contact": [
+    {
+      "name": "Dr. Franziska Jauch",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "fjauch@uniklinikum-ulm.de",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Wiktor Silberk",
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+49 1715 8264023",
+          "use": "mobile"
+        }
+      ]
+    }
+  ],
+  "condition": [
+    {
+      "text": "Cholera",
+      "coding": [
+        {
+          "code": "A00.0",
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "version": "2024"
+        },
+        {
+          "code": "240349003",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+        }
+      ]
+    }
+  ],
+  "sponsor": {
+    "reference": "Organization/firetrial-sponsor"
+  },
+  "principalInvestigator": {
+    "reference": "Practitioner/firetrial-pi"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/fhir-for-fair/StructureDefinition/licenceCodeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "MIT",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "MIT License"
+          }
+        ]
+      }
+    }
+  ]
+}
