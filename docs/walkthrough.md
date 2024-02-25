@@ -216,13 +216,26 @@ FSH Online now generates three individual files, see on the far right.
 <a href="./assets/img/wt14-fsh-references.png"><img src="./assets/img/wt14-fsh-references.png" width="100"/></a>
 
 ## Using the FHIR4FAIR Implementation Guide ResearchStudy-uv-f4f (Profile)
+So far, only standard R4 resources have been used. Now a profile from the FHIR4FAIR Implementation Guide is to be used. ResearchStudy-uv-f4f is, as the name suggests, a profile from ResearchStudy. As already mentioned, profiles are, colloquially speaking, on the one hand, restrictions of values in order to obtain a certain data structure of higher quality and, on the other hand, extensions to map additional data.
+
+First, it is declared that the instance created here should conform to the profile. This is evaluated during validation.
+
 ```
-* name.text = "Prof. Dr. T. Ester"
+* meta.profile = "http://hl7.org/fhir/uv/fhir-for-fair/StructureDefinition/ResearchStudy-uv-f4f"
 ```
 
-FSH Online now generates three individual files, see on the far right.
+Meta.profile is a structure that is not defined in ResearchStudy itself, but which the [Meta](https://hl7.org/fhir/R4/resource.html#Meta) element inherits from its super-super-class [Resource](https://hl7.org/fhir/R4/resource.html#resource). 
 
-<a href="./assets/img/wt1.png"><img src="./assets/img/wt14-fsh-references.png" width="100"/></a>
+A license is now to be added to the study. Licenses are one of the requirements of FAIR (R1.1). While a standard R4 ResearchStudy does not have the option of referring to a license, this has been implemented in the FHIR4FAIR IG as an extension [licenseCodeable](https://hl7.org/fhir/uv/fhir-for-fair/StructureDefinition-ResearchStudy-uv-f4f-definitions.html#ResearchStudy.extension:licenceCodeable). 
+
+```
+* extension[0].url = "http://hl7.org/fhir/uv/fhir-for-fair/StructureDefinition/licenceCodeable"
+* extension[=].valueCodeableConcept = http://hl7.org/fhir/spdx-license#MIT "MIT License"
+```
+
+Now our study is under the MIT license (whatever that means).
+
+<a href="./assets/img/wt15-fsh-license.png"><img src="./assets/img/wt15-fsh-license.png" width="100"/></a>
 
 # Exercises
 
