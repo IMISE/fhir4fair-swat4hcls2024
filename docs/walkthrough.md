@@ -4,9 +4,9 @@
 
 # Walk through
 
-## Dry-run
-
 This walk-through is intended for interested parties who have not yet worked intensively with FSH.
+
+## Dry run
 
 * Open [https://fshschool.org/FSHOnline/#/](https://fshschool.org/FSHOnline/#/).
 
@@ -111,7 +111,9 @@ No problem while converting.
 
 ## Adding the start and end date/time of a study (Period)
 
-Adding dates
+Adding dates is very similar to strings, except that a [predefined format](https://www.hl7.org/fhir/datatypes-examples.html) must be adhered to. A FHIR [Period](https://www.hl7.org/fhir/datatypes.html#Period) has an optional start and end of type datetime.
+
+* "2013-06-08T10:57:34+01:00"
 
 ## Adding the study id (Identifier)
 
@@ -121,6 +123,16 @@ Adding dates
 
 ## Adding sponsor and PI (Reference to other named resources)
 
+# Exercises
+
+## Getting rid of the annoying validation warning
+
+<details>
+<summary>1. Getting rid of the annoying validation warning</summary>
+When we validate our current status with [Inferno](https://inferno.healthit.gov/validator/), no errors occur, but there is a strange warning:
+
+> 
+</details>
 No problem while validating.
 
 
