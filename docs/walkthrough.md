@@ -161,14 +161,24 @@ ResearchStudy.contact is of type [ContactDetail](https://hl7.org/fhir/R4/metadat
 
 The title of a study can contain important information about what the study is about. However, medical terminology is diverse and language-dependent. For clarity and machine processability, it is better to use a community-consensus vocabulary. In the field of medicine, SNOMED CT is a good international candidate.
 
-FHIR has three basic ways of encoding elements. We have already seen FHIR code. Here there is only the actual code, because the set from which it can be selected is implicitly fixed. FHIR coding, on the other hand, is like a code + a system from which the code comes. A CodeableConcept can do even more: here we can even use several annotations from Code+System.
+FHIR has three basic ways of encoding elements. We have already seen FHIR [code](https://hl7.org/fhir/R4/datatypes.html#code). Here there is only the actual code, because the set from which it can be selected is implicitly fixed. FHIR [Coding](https://hl7.org/fhir/R4/datatypes.html#Coding), on the other hand, is like a code + a system from which the code comes. A FHIR [CodeableConcept](https://hl7.org/fhir/R4/datatypes.html#CodeableConcept) can do even more: here we can even use several annotations from Code+System.
+
+This allows the FAIR requirement for multiple relevant metadata to be met, as other systems such as ICD-10 are often used in local systems, e.g. for diagnoses in hospitals. To ensure that there is no mixture and that the study is ultimately difficult to find, we specify both values.
 
 ```
-* identifier[0].use = #official
-* identifier[=].system = "https://clinicaltrials.gov"
-* identifier[=].value = "NCT05487991"
+* condition.text = "Cholera"
+* condition.coding[0] = $icd-10#A00.0
+* condition.coding[=].version = "2024"
+* condition.coding[+] = $sct#240349003
+* condition.coding[=].version = "http://snomed.info/sct/900000000000207008/version/20230731"
 ```
 
+In addition, we use the alias feature of FSH, a definition of a constant as an abbreviation for long URIs that are used several times. Aliases are placed at the beginning of the document.
+
+```
+Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
+Alias: $sct = http://snomed.info/sct
+```
 <a href="./assets/img/wt11-fsh-identifier.png"><img src="./assets/img/wt11-fsh-identifier.png" width="100"/></a>
 
 ## Adding sponsor and PI (Reference to another named resource)
