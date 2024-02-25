@@ -181,11 +181,35 @@ In addition, we use the alias feature of FSH, a definition of a constant as an a
 Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
 Alias: $sct = http://snomed.info/sct
 ```
+
 <a href="./assets/img/wt13-fsh-codeables.png"><img src="./assets/img/wt13-fsh-codeables.png" width="100"/></a>
 
 ## Adding sponsor and PI (Reference to another named resource)
 
+Referencing another FHIR resource instance is easy.
 
+```
+* sponsor = Reference(firetrial-sponsor)
+* principalInvestigator = Reference(firetrial-pi)
+```
+
+We can also create the target resources in the same file.
+
+```
+Instance: firetrial-sponsor
+InstanceOf: Organization
+Usage: #example
+* name = "Ulm University Hospital"
+
+Instance: firetrial-pi
+InstanceOf: Practitioner
+Usage: #example
+* name.text = "Prof. Dr. T. Ester"
+```
+
+FSH Online now generates three individual files, see on the far right.
+
+<a href="./assets/img/wt14-fsh-references.png"><img src="./assets/img/wt14-fsh-references.png" width="100"/></a>
 
 ## FHIR4FAIR
 
