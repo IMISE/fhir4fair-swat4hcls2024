@@ -173,17 +173,19 @@ This allows the FAIR requirement for multiple relevant metadata to be met, as ot
 * condition.coding[=].version = "http://snomed.info/sct/900000000000207008/version/20230731"
 ```
 
+What you can also see here is the version of the referenced vocabulary. As the state of knowledge about diseases changes and new ones are added (Covid-19), this is good practice.
+
 In addition, we use the alias feature of FSH, a definition of a constant as an abbreviation for long URIs that are used several times. Aliases are placed at the beginning of the document.
 
 ```
 Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
 Alias: $sct = http://snomed.info/sct
 ```
-<a href="./assets/img/wt11-fsh-identifier.png"><img src="./assets/img/wt11-fsh-identifier.png" width="100"/></a>
+<a href="./assets/img/wt13-fsh-codeables.png"><img src="./assets/img/wt13-fsh-codeables.png" width="100"/></a>
 
 ## Adding sponsor and PI (Reference to another named resource)
 
-## Aliases
+
 
 ## FHIR4FAIR
 
