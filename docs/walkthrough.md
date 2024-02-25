@@ -6,7 +6,7 @@
 
 This walk-through is intended for interested parties who have not yet worked intensively with FSH.
 
-## Dry run
+## 0. Dry run
 
 * Open [https://fshschool.org/FSHOnline/#/](https://fshschool.org/FSHOnline/#/).
 
@@ -38,7 +38,7 @@ There should be no errors, only some warnings.
 
 <a href="./assets/img/wt05-inferno-valid.png"><img src="./assets/img/wt05-inferno-valid.png" width="100"/></a>
 
-## Creating an empty study
+## 1. Creating an empty study
 
 * Open [https://fshschool.org/FSHOnline/#/](https://fshschool.org/FSHOnline/#/) and delete everything possibly left in the FSH tab.
 * Enter the code snippet below and substitude the name of the instance with your pref Press "Convert to JSON".
@@ -59,7 +59,7 @@ It generates some JSON code, but there is obviously a mistake.
 
 The ResearchStudy has a mandatory field called status in FHIR and this is missing.
 
-## Adding study status (code from a controlled vocabulary)
+## 2. Adding study status (code from a controlled vocabulary)
 
 If we look at the specification of [ResearchStudy](https://hl7.org/fhir/R4/researchstudy.html#resource) in FHIR R4, we see that the cardinality of status is 1..1.
 
@@ -75,7 +75,7 @@ All other elements are optional in the generic resource. Now no more errors are 
 
 <a href="./assets/img/wt08-rs-status.png"><img src="./assets/img/wt08-rs-status.png" width="100"/></a>
 
-## Adding the study title (string)
+## 3. Adding the study title (string)
 
 The title of the study is a simple string.
 
@@ -83,7 +83,7 @@ The title of the study is a simple string.
 * title = "FAIRness in FHIR"
 ```
 
-## Adding a description (markdown)
+## 4. Adding a description (markdown)
 
 The description of a study is of type markdown and is assigned in the same way, except that the receiving system must be able to handle markdown syntax.
 
@@ -91,7 +91,7 @@ The description of a study is of type markdown and is assigned in the same way, 
 * description = "A study assessing the **FAIRness** of FHIR artifacts."
 ```
 
-## Adding a note (Annotation)
+## 5. Adding a note (Annotation)
 
 ```
 * note = "Study design is still unclear."
@@ -109,7 +109,7 @@ The data type of note is [Annotation](https://hl7.org/fhir/R4/datatypes.html#Ann
 
 No problem while converting. 
 
-## Adding the start and end date/time of a study (Period)
+## 6. Adding the start and end date/time of a study (Period)
 
 Adding dates is very similar to strings, except that a [predefined format](https://www.hl7.org/fhir/datatypes-examples.html) must be adhered to. A FHIR [Period](https://www.hl7.org/fhir/datatypes.html#Period) has an optional start and end of type datetime.
 
@@ -122,7 +122,7 @@ Therefore, not only dates are possible. Our example study starts today in the mo
 
 <a href="./assets/img/wt10-fsh-period.png"><img src="./assets/img/wt10-fsh-period.png" width="100"/></a>
 
-## Adding the study id (Identifier)
+## 7. Adding the study id (Identifier)
 
 An important criterion for findability in FAIR is a persistent identifier. Interventional clinical trials must be prospectively registered in a trial registry from which they receive an identifier. For example, we register our study in the international [ClinicalTrials.gov](https://clinicaltrials.gov/) register and receive the CT.gov number NCT05487991.
 
@@ -136,7 +136,7 @@ The fact that this is a universal business identifier is made clear with additio
 
 <a href="./assets/img/wt11-fsh-identifier.png"><img src="./assets/img/wt11-fsh-identifier.png" width="100"/></a>
 
-## Adding contacts (multiple values)
+## 8. Adding contacts (multiple values)
 
 Next, we would like to specify two people from the study's environment who serve as medical and organizational contacts. The element [contact](https://hl7.org/fhir/R4/researchstudy.html#resource) must be specified multiple times for this. This is very easy to do with FSH. The first instance is given an index [0]. Further instances would then receive [1] and so on. 
 
@@ -157,7 +157,7 @@ ResearchStudy.contact is of type [ContactDetail](https://hl7.org/fhir/R4/metadat
 
 <a href="./assets/img/wt12-fsh-contacts.png"><img src="./assets/img/wt12-fsh-contacts.png" width="100"/></a>
 
-## Adding the condition to be studied (Codeable Concept)
+## 9. Adding the condition to be studied (Codeable Concept)
 
 The title of a study can contain important information about what the study is about. However, medical terminology is diverse and language-dependent. For clarity and machine processability, it is better to use a community-consensus vocabulary. In the field of medicine, SNOMED CT is a good international candidate.
 
@@ -184,7 +184,7 @@ Alias: $sct = http://snomed.info/sct
 
 <a href="./assets/img/wt13-fsh-codeables.png"><img src="./assets/img/wt13-fsh-codeables.png" width="100"/></a>
 
-## Adding sponsor and PI (Reference to another named resource)
+## 10. Adding sponsor and PI (Reference to another named resource)
 
 Finally, we want to add references to other FHIR resources. FHIR ResearchStudy sponsor refers to a FHIR Organization and principalInvestigator refers to a Practitioner or a PractitionerRole. Both are independent entities like ResearchStudy itself. Both can be references by other instance as well. However, they should only be created once.
 
@@ -215,7 +215,7 @@ FSH Online now generates three individual files, see on the far right.
 
 <a href="./assets/img/wt14-fsh-references.png"><img src="./assets/img/wt14-fsh-references.png" width="100"/></a>
 
-## Using the FHIR4FAIR Implementation Guide ResearchStudy-uv-f4f (Profile)
+# Using the FHIR4FAIR Implementation Guide ResearchStudy-uv-f4f (Profile)
 So far, only standard R4 resources have been used. Now a profile from the FHIR4FAIR Implementation Guide is to be used. ResearchStudy-uv-f4f is, as the name suggests, a profile from ResearchStudy. As already mentioned, profiles are, colloquially speaking, on the one hand, restrictions of values in order to obtain a certain data structure of higher quality and, on the other hand, extensions to map additional data.
 
 First, it is declared that the instance created here should conform to the profile. This is evaluated during validation.
@@ -237,26 +237,45 @@ Now our study is under the MIT license (whatever that means).
 
 <a href="./assets/img/wt15-fsh-license.png"><img src="./assets/img/wt15-fsh-license.png" width="100"/></a>
 
+Download the complete example as [FSH](./assets/fsh/firetrial.fsh) or a [JSON](./assets/json/firetrial.json).
+
 # Exercises
 
-## Getting rid of the annoying validation warning
+## Fine-tuning and tidying up
 
-When we validate our current status with [Inferno](https://inferno.healthit.gov/validator/), no errors occur, but there is a strange warning:
+If we now want to validate our design, we have to give the validator a hint that this is now a FHIR4FAIR study. Although it already knows this from the information in meta.profile, it naturally lacks an idea of what the profile schema should look like.
 
-> Warning: 
+* Open [Inferno](https://inferno.healthit.gov/validator/)
+* Copy and paste the JSON code as before
+* Click on "Advanced options"
+* Below *Pick an Implementation Guide to validate against:*, enter FAIR. That will filter and 'hl7.fhir.uv.fhir-for-fair' will appear
+* Below *Select a profile:*, select 'http://hl7.org/fhir/uv/fhir-for-fair/StructureDefinition/ResearchStudy-uv-f4f'
+* Click on "Validate'
+
+When we validate our current draft with , no errors occur, but there are some strange warnings.
+
+<a href="./assets/img/wt16-inferno-warnings.png"><img src="./assets/img/wt16-inferno-warnings.png" width="100"/></a>
+
+> No validation error issues found
+> 
+> Validation warnings:
+> 
+> 1. ResearchStudy: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in
+> http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation) on line 1. Jump to error.
+> 2. ResearchStudy.status: ValueSet http://hl7.org/fhir/ValueSet/research-study-status|4.3.0 not found on line 9. Jump to error.
+>
+> Validation information:
+>
+> 3. ResearchStudy.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/fhir-for-fair/StructureDefinition/ResearchStudy-uv-f4f|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice) on line 22. Jump to error.
+> 4. ResearchStudy.condition[0]: Reference to experimental CodeSystem http://hl7.org/fhir/sid/icd-10|2019-covid-expanded on line 51. Jump to error.
+> 5. ResearchStudy.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7 on line 76. Jump to error.
 
 <details>
-<summary>Solution</summary>
+<summary>Solution to 1.</summary>
+The reason for the warning is that it is a Best Practice Recommendation to have an human-readable narrative in [DomainResource.text](https://hl7.org/fhir/R4/domainresource-definitions.html#DomainResource.text). DomainResource is the superclass of ResearchStudy, so the text element is inherited.
 
+```
+* text.status = #additional
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">[Epic information omitted for reasons of simplicity.]</div>"
+```
 </details>
-No problem while validating.
-
-
-
-To make the last warning disappear
-
-
-
-
-
-
