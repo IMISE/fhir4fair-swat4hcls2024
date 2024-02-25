@@ -59,7 +59,7 @@ It generates some JSON code, but there is obviously a mistake.
 
 The ResearchStudy has a mandatory field called status in FHIR and this is missing.
 
-## Adding an element from a controlled vocabulary (study status)
+## Adding study status (code from a controlled vocabulary)
 
 If we look at the specification of [ResearchStudy](https://hl7.org/fhir/R4/researchstudy.html#resource) in FHIR R4, we see that the cardinality of status is 1..1.
 
@@ -75,7 +75,7 @@ All other elements are optional in the generic resource. Now no more errors are 
 
 <a href="./assets/img/wt08-rs-status.png"><img src="./assets/img/wt08-rs-status.png" width="100"/></a>
 
-## Adding the study title
+## Adding the study title (string)
 
 The title of the study is a simple string.
 
@@ -83,7 +83,7 @@ The title of the study is a simple string.
 * title = "FAIRness in FHIR"
 ```
 
-## Adding a description
+## Adding a description (markdown)
 
 The description of a study is of type markdown and is assigned in the same way, except that the receiving system must be able to handle markdown syntax.
 
@@ -91,7 +91,7 @@ The description of a study is of type markdown and is assigned in the same way, 
 * description = "A study assessing the **FAIRness** of FHIR artifacts."
 ```
 
-## Adding a note
+## Adding a note (Annotation)
 
 ```
 * note = "Study design is still unclear."
@@ -109,9 +109,18 @@ The data type of note is [Annotation](https://hl7.org/fhir/R4/datatypes.html#Ann
 
 No problem while converting. 
 
-## Adding the start and end date/time of a study
+## Adding the start and end date/time of a study (Period)
 
 Adding dates
+
+## Adding the study id (Identifier)
+
+## Adding the condition to be studied (Codeable Concept)
+
+## Adding contact (multiple values)
+
+## Adding sponsor and PI (Reference to other named resources)
+
 No problem while validating.
 
 
