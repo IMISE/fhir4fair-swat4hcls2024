@@ -237,6 +237,8 @@ Now our study is under the MIT license (whatever that means).
 
 <a href="./assets/img/wt15-fsh-license.png"><img src="./assets/img/wt15-fsh-license.png" width="100"/></a>
 
+Download the complete example as [FSH](./assets/fsh/firetrial.fsh) or a [JSON](./assets/json/firetrial.json).
+
 # Exercises
 
 ## Fine-tuning and tidying up
@@ -270,24 +272,10 @@ When we validate our current draft with , no errors occur, but there are some st
 
 <details>
 <summary>Solution to 1.</summary>
+The reason for the warning is that it is a Best Practice Recommendation to have an human-readable narrative in [DomainResource.text](https://hl7.org/fhir/R4/domainresource-definitions.html#DomainResource.text). DomainResource is the superclass of ResearchStudy, so the text element is inherited.
 
+```
+* text.status = #additional
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">[Epic information omitted for reasons of simplicity.]</div>"
+```
 </details>
-
-
-<details>
-<summary>Solution to 2.</summary>
-
-</details>
-
-
-<details>
-<summary>Solution to 3.</summary>
-
-</details>
-
-
-
-
-
-
-
