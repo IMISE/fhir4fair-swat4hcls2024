@@ -136,21 +136,39 @@ The fact that this is a universal business identifier is made clear with additio
 
 <a href="./assets/img/wt11-fsh-identifier.png"><img src="./assets/img/wt11-fsh-identifier.png" width="100"/></a>
 
+## Adding contacts (multiple values)
+
 ## Adding the condition to be studied (Codeable Concept)
 
-## Adding contact (multiple values)
+The title of a study can contain important information about what the study is about. However, medical terminology is diverse and language-dependent. For clarity and machine processability, it is better to use a community-consensus vocabulary. In the field of medicine, SNOMED CT is a good international candidate.
 
-## Adding sponsor and PI (Reference to other named resources)
+FHIR has three basic ways of encoding elements. We have already seen FHIR code. Here there is only the actual code, because the set from which it can be selected is implicitly fixed. FHIR coding, on the other hand, is like a code + a system from which the code comes. A CodeableConcept can do even more: here we can even use several annotations from Code+System.
+
+```
+* identifier[0].use = #official
+* identifier[=].system = "https://clinicaltrials.gov"
+* identifier[=].value = "NCT05487991"
+```
+
+<a href="./assets/img/wt11-fsh-identifier.png"><img src="./assets/img/wt11-fsh-identifier.png" width="100"/></a>
+
+## Adding sponsor and PI (Reference to another named resource)
+
+## Aliases
+
+## FHIR4FAIR
 
 # Exercises
 
 ## Getting rid of the annoying validation warning
 
-<details>
-<summary>1. Getting rid of the annoying validation warning</summary>
 When we validate our current status with [Inferno](https://inferno.healthit.gov/validator/), no errors occur, but there is a strange warning:
 
-> 
+> Warning: 
+
+<details>
+<summary>Solution</summary>
+
 </details>
 No problem while validating.
 
