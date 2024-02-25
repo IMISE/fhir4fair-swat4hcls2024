@@ -138,6 +138,25 @@ The fact that this is a universal business identifier is made clear with additio
 
 ## Adding contacts (multiple values)
 
+Next, we would like to specify two people from the study's environment who serve as medical and organizational contacts. The element [contact](https://hl7.org/fhir/R4/researchstudy.html#resource) must be specified multiple times for this. This is very easy to do with FSH. The first instance is given an index [0]. Further instances would then receive [1] and so on. 
+
+However, because it is often necessary to change the order later (and therefore all indices), FSH uses [=] for a further entry for the current contact and [+] for the next contact.
+
+ResearchStudy.contact is of type [ContactDetail](https://hl7.org/fhir/R4/metadatatypes.html#ContactDetail)which itself is composed of other data types. The deeper hierarchies are separated by a dot.
+
+```
+* contact[0].name = "Dr. Franziska Jauch"
+* contact[=].telecom.system = #email
+* contact[=].telecom.value = "fjauch@uniklinikum-ulm.de"
+* contact[=].telecom.use = #work
+* contact[+].name = "Wiktor Silberk"
+* contact[=].telecom.system = #phone
+* contact[=].telecom.value = "+49 1715 8264023"
+* contact[=].telecom.use = #mobile
+```
+
+<a href="./assets/img/wt12-fsh-contacts.png"><img src="./assets/img/wt12-fsh-contacts.png" width="100"/></a>
+
 ## Adding the condition to be studied (Codeable Concept)
 
 The title of a study can contain important information about what the study is about. However, medical terminology is diverse and language-dependent. For clarity and machine processability, it is better to use a community-consensus vocabulary. In the field of medicine, SNOMED CT is a good international candidate.
