@@ -113,9 +113,16 @@ No problem while converting.
 
 Adding dates is very similar to strings, except that a [predefined format](https://www.hl7.org/fhir/datatypes-examples.html) must be adhered to. A FHIR [Period](https://www.hl7.org/fhir/datatypes.html#Period) has an optional start and end of type datetime.
 
-* "2013-06-08T10:57:34+01:00"
+Therefore, not only dates are possible. Our example study starts today in the morning and ends in December.
+
+```
+* period.start = "2024-02-26T09:00:00+01:00"
+* period.end = "2024-12"
+```
 
 ## Adding the study id (Identifier)
+
+An important criterion for findability in FAIR is a persistent identifier. Interventional clinical trials must be prospectively registered in a trial registry from which they receive an identifier. For example, we register our study in the EU Clinical Trials Register and receive the EudraCT number 2024-003536-87.
 
 ## Adding the condition to be studied (Codeable Concept)
 
