@@ -120,9 +120,21 @@ Therefore, not only dates are possible. Our example study starts today in the mo
 * period.end = "2024-12"
 ```
 
+<a href="./assets/img/wt10-fsh-period.png"><img src="./assets/img/wt10-fsh-period.png" width="100"/></a>
+
 ## Adding the study id (Identifier)
 
-An important criterion for findability in FAIR is a persistent identifier. Interventional clinical trials must be prospectively registered in a trial registry from which they receive an identifier. For example, we register our study in the EU Clinical Trials Register and receive the EudraCT number 2024-003536-87.
+An important criterion for findability in FAIR is a persistent identifier. Interventional clinical trials must be prospectively registered in a trial registry from which they receive an identifier. For example, we register our study in the international [ClinicalTrials.gov](https://clinicaltrials.gov/) register and receive the CT.gov number NCT05487991.
+
+The fact that this is a universal business identifier is made clear with additional information.
+
+```
+* identifier[0].use = #official
+* identifier[=].system = "https://clinicaltrials.gov"
+* identifier[=].value = "NCT05487991"
+```
+
+<a href="./assets/img/wt11-fsh-identifier.png"><img src="./assets/img/wt11-fsh-identifier.png" width="100"/></a>
 
 ## Adding the condition to be studied (Codeable Concept)
 
