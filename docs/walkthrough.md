@@ -215,7 +215,7 @@ FSH Online now generates three individual files, see on the far right.
 
 <a href="./assets/img/wt14-fsh-references.png"><img src="./assets/img/wt14-fsh-references.png" width="100"/></a>
 
-## Using the FHIR4FAIR Implementation Guide ResearchStudy-uv-f4f (Profile)
+# Using the FHIR4FAIR Implementation Guide ResearchStudy-uv-f4f (Profile)
 So far, only standard R4 resources have been used. Now a profile from the FHIR4FAIR Implementation Guide is to be used. ResearchStudy-uv-f4f is, as the name suggests, a profile from ResearchStudy. As already mentioned, profiles are, colloquially speaking, on the one hand, restrictions of values in order to obtain a certain data structure of higher quality and, on the other hand, extensions to map additional data.
 
 First, it is declared that the instance created here should conform to the profile. This is evaluated during validation.
@@ -248,20 +248,43 @@ If we now want to validate our design, we have to give the validator a hint that
 * Click on "Advanced options"
 * Below *Pick an Implementation Guide to validate against:*, enter FAIR. That will filter and 'hl7.fhir.uv.fhir-for-fair' will appear
 * Below *Select a profile:*, select 'http://hl7.org/fhir/uv/fhir-for-fair/StructureDefinition/ResearchStudy-uv-f4f'
+* Click on "Validate'
 
-When we validate our current draft with , no errors occur, but there is a strange warning:
+When we validate our current draft with , no errors occur, but there are some strange warnings.
 
-> Warning: 
+<a href="./assets/img/wt16-inferno-warnings.png"><img src="./assets/img/wt16-inferno-warnings.png" width="100"/></a>
+
+> No validation error issues found
+> 
+> Validation warnings:
+> 
+> 1. ResearchStudy: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in
+> http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation) on line 1. Jump to error.
+> 2. ResearchStudy.status: ValueSet http://hl7.org/fhir/ValueSet/research-study-status|4.3.0 not found on line 9. Jump to error.
+>
+> Validation information:
+>
+> 3. ResearchStudy.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/fhir-for-fair/StructureDefinition/ResearchStudy-uv-f4f|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice) on line 22. Jump to error.
+> 4. ResearchStudy.condition[0]: Reference to experimental CodeSystem http://hl7.org/fhir/sid/icd-10|2019-covid-expanded on line 51. Jump to error.
+> 5. ResearchStudy.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7 on line 76. Jump to error.
 
 <details>
-<summary>Solution</summary>
+<summary>Solution to 1.</summary>
 
 </details>
-No problem while validating.
 
 
+<details>
+<summary>Solution to 2.</summary>
 
-To make the last warning disappear
+</details>
+
+
+<details>
+<summary>Solution to 3.</summary>
+
+</details>
+
 
 
 
